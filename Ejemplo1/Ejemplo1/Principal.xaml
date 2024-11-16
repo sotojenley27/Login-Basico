@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejemplo1.Principal"
+             Title="Perfil De Instagram">
+              
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Bienvenidos A Mi Perfil"
+                   TextColor="Aqua"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"/>
+            
+            <WebView Source="https://www.instagram.com/jenley.gg/"
+                     VerticalOptions="FillAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

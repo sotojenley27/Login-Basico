@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejemplo1.MainPage"
+             Title="Login GG👌">
+
+    <StackLayout BackgroundColor="Black">
+        <Frame BackgroundColor="#192a56" 
+               Padding="25"
+               CornerRadius="50"
+               BorderColor="Aqua" >
+            <Label Text="Login Basico GG"
+                   TextColor="Aqua" 
+                   FontSize="30"
+                   HorizontalTextAlignment="Center"/>
+        </Frame>
+
+        <Frame Margin="10"
+               WidthRequest="65"
+               HeightRequest="65"
+               BorderColor="Aqua"
+               BackgroundColor="Black"
+               CornerRadius="100"
+               IsClippedToBounds="True"
+               HorizontalOptions="Center"
+               VerticalOptions="Center">
+            <Image Source="Login.png"
+                   Aspect="AspectFill"
+                   WidthRequest="100"
+                   HeightRequest="100"
+                   Margin="-8"/>
+        </Frame>
+
+        <Entry Placeholder="Usuario" 
+               BackgroundColor="Aqua"
+               TextColor="#0d1318"
+               FontSize="25"
+               HorizontalTextAlignment="Center"
+               Margin="20"
+               x:Name="txtUsuario"
+               />
+        <Entry Placeholder="Password"
+               BackgroundColor="Aqua"
+               IsPassword="True"
+               TextColor="#0d1318"
+               FontSize="25"
+               HorizontalTextAlignment="Center"
+               Margin="20"
+               x:Name="txtPassword"
+               />
+
+        <StackLayout Orientation="Vertical"
+                     HeightRequest="120"
+                     BackgroundColor="Black" 
+                     Padding="10" 
+                     Margin="20">
+            
+            <StackLayout Spacing="0"
+                         BackgroundColor="#white"
+                         Orientation="Horizontal"
+                         HorizontalOptions="Center"
+                         Padding="10">
+                <ImageButton BackgroundColor="black" Source="Aceptar.png" HeightRequest="100" WidthRequest="100" x:Name="Btn_Aceptar" Clicked="Btn_Aceptar_Clicked"/>
+                <BoxView/>
+                <ImageButton BackgroundColor="Black"  Source="No.png" HeightRequest="100" WidthRequest="90" x:Name="Btn_No" Clicked="Btn_No_Clicked" />
+            </StackLayout>
+            
+        </StackLayout>
+       
+    </StackLayout>
+
+</ContentPage>

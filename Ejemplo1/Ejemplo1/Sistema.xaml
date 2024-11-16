@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejemplo1.Sistema"
+             Title="Presentacion Pequeña 😎">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Black">
+
+            <Frame BackgroundColor="Black"
+              >
+                <Image Source="https://static.vecteezy.com/system/resources/previews/018/930/691/non_2x/instagram-logo-instagram-icon-transparent-free-png.png"
+                   WidthRequest="150"
+                   HeightRequest="150"
+                   Margin="-35"
+                />
+            </Frame>
+
+            <Label Text="Bienvenidos a mi perfil"
+                   FontSize="25"
+                   TextColor="Aqua"
+                   Padding="10"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+
+
+            <Label Text="Soy Jensley Amaurys Soto Ciprian, Un Joven de 20 años amante a la programacion y estudiante de ING.Sistemas"
+                   FontSize="29"
+                   TextColor="Aqua"
+                   Padding="10"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+
+            <Frame Margin="1"
+                   BorderColor="Aqua"
+                   CornerRadius="200"
+                   HeightRequest="100"
+                   WidthRequest="100"
+                   IsClippedToBounds="True"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   >
+                <Image Source="Jenley.png"
+                       Aspect="AspectFit"
+                       Margin="-15"
+                       />
+            </Frame>
+
+            <Button Text="Ir A El Perfil De Instagram"
+                    FontSize="18"
+                    TextColor="Aqua"
+                    BorderColor="White"
+                    BorderWidth="3"
+                    BackgroundColor="Black"
+                    Margin="25"
+                    CornerRadius="25"
+                    x:Name="Btn_Ir"
+                    Clicked="Btn_Ir_Clicked"
+            />
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
